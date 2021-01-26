@@ -1,9 +1,7 @@
-const { kebapToCamel, kebapToHeading } = require('../../helpers/convert-case')
+const { kebapToCamel } = require('../../helpers/convert-case')
 
 const contentTemplate = ({ name }, old) => {
-  const insertLine = `  ${kebapToCamel(
-    name
-  )}: ApiFunction<null, 'Hello from ${kebapToHeading(name)}!'>`
+  const insertLine = `  ${kebapToCamel(name)}: ApiFunction<null, string>`
 
   return old
     .split('\n')
