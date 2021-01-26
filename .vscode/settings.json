@@ -1,7 +1,6 @@
 {
   "files.exclude": {
     "**/.eslintcache": true,
-    "**/.github": true,
     "**/build": true,
     "**/debug.log": true,
     "**/firebase-debug.log": true,
