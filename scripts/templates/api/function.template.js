@@ -4,7 +4,9 @@ const contentTemplate = ({
   name,
 }) => `import callableFunction from '../../helpers/callable-functions'
 
-const ${kebapToCamel(name)} = callableFunction<'helloWorld'>(async () => {
+const ${kebapToCamel(name)} = callableFunction<'${kebapToCamel(
+  name
+)}'>(async () => {
   return 'Hello from ${kebapToHeading(name)}!'
 })
 
